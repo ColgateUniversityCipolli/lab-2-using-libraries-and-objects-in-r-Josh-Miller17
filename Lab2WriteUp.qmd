@@ -91,6 +91,10 @@ library(esquisse)
 ## Part c
 How can you ask for help about the  `esquisse` package for `R`? Report the code below, ensuring to set the `eval` option to `false`, using "\#| eval: false", so that the help document isn't loaded every time you compile your Quarto document.
 
+Solution:
+#| eval: false
+help("esquisse")
+
 ## Part d
 Is a demo or vignette available for the  `esquisse` package for `R`? Report the code below, ensuring to set the `eval` option to `false`, using "\#| eval: false", so that the you don't get errors when you compile your Quarto document.
 

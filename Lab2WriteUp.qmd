@@ -78,6 +78,7 @@ knitr::knit_hooks$set(chunk = function(x, options) {
 ## Part a
 Install the `esquisse` package for `R`. Report the code below, ensuring to set the `eval` option to `false`, using "\#| eval: false", so that we don't install the package every time you compile your Quarto document.
 
+#|this is my answer for question 1.a 
 Solution:
 #| eval: false
 install.packages("esquisse")
@@ -85,12 +86,14 @@ install.packages("esquisse")
 ## Part b
 Load the `esquisse` package for `R`. Report the code below. It does not matter whether you set "\#| eval: false" because loading the package does not add a lot of time. Note you will not evaluate any code that uses the `esquisse` package, so there is no need to load it as you compile your Quarto document.
 
+#|this is my answer for question 1.b 
 Solution:
 library(esquisse)
 
 ## Part c
 How can you ask for help about the  `esquisse` package for `R`? Report the code below, ensuring to set the `eval` option to `false`, using "\#| eval: false", so that the help document isn't loaded every time you compile your Quarto document.
 
+#|this is my answer for question 1.c 
 Solution:
 #| eval: false
 help("esquisse")
@@ -98,6 +101,7 @@ help("esquisse")
 ## Part d
 Is a demo or vignette available for the  `esquisse` package for `R`? Report the code below, ensuring to set the `eval` option to `false`, using "\#| eval: false", so that the you don't get errors when you compile your Quarto document.
 
+#|this is my answer for question 1.d, 
 Solution:
 #| eval: false
 demo("esquisse")
@@ -109,6 +113,7 @@ Add the BibTeX citation for `esquisse` package for `R` to your `.bib` file and c
 <!-- Note the \hspace{-0em} above is for printing 
 the command instead of actually citing. -->
 
+#|this is my answer for question 1.e 
 Solution: the package @\hspace{-0em}esquisse explores and visualizes data interactively
 
 ## Part f
@@ -117,6 +122,9 @@ Run `esquisser()` in your console -- not in a chunk of `R` code in your Quarto d
 i. Select `palmerpenguins` from the "Select an environment in which to search:" dropdown. This should automatically select `penguins` in the "Select a data.frame:" dropdown. Click "Import Data".
 ii. Drag `body_mass_g` to the X box and `species` to the fill box. 
 iii. Describe what you see in words. What can you conclude about Adelie, Chinstrap, and Gentoo penguins based on the resulting plot? 
+
+#| I am describing what I am seeing in the resulting plot 
+Solution: I can see a bar chart with the x axis representing body mass in grams, ranging from 2500 to 6000. The y axis is the count, or number, of pengins at each mass. The data is colored in red, green and blue with the Adelie, Chinstrap, and Gentoo penguins each representing their respective colors. From the plot, the Adelie penguins are the lightest penguins and have the highest number of observations. The Adelie penguin seems to typically. be between 3000 and 4000 grams. the Chinstrap penguins are more spread out, but seem to be the second lightest penguin species. The Gentoo penguins also have a wide spread, but seem to be the heaviest penguins mostly ranging from 4500 to 5500 grams.
 
 # Objects and Vectors
 Create the following vectors in `R`. In some cases, you may be able to use `seq()` or `rep()` while in others you cannot. Use these functions when possible, otherwise manually create the vector and explain why that was necessary.

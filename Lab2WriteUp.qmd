@@ -216,4 +216,4 @@ Create a vector containing the `character` "MATH" and the `numeric` 240. What is
 Solution:
 (vector <- c("MATH", 240)) # created vector
 class(vector) # checked class of the vector
-the vector had a class "character" because although the vector contains both a character and a numeric object, all the data takes the class of the item all the way to the right, which is a character in this case.
+the vector had a class "character" because although the vector contains both a character and a numeric object, all the data takes the class of the item all the way to the right, which is a character in this case

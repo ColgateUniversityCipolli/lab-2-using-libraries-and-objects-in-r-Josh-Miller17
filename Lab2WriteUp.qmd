@@ -78,7 +78,7 @@ knitr::knit_hooks$set(chunk = function(x, options) {
 ## Part a
 Install the `esquisse` package for `R`. Report the code below, ensuring to set the `eval` option to `false`, using "\#| eval: false", so that we don't install the package every time you compile your Quarto document.
 
-#|this is my answer for question 1.a 
+
 Solution:
 #| eval: false
 install.packages("esquisse")
@@ -86,14 +86,14 @@ install.packages("esquisse")
 ## Part b
 Load the `esquisse` package for `R`. Report the code below. It does not matter whether you set "\#| eval: false" because loading the package does not add a lot of time. Note you will not evaluate any code that uses the `esquisse` package, so there is no need to load it as you compile your Quarto document.
 
-#|this is my answer for question 1.b 
+
 Solution:
 library(esquisse)
 
 ## Part c
 How can you ask for help about the  `esquisse` package for `R`? Report the code below, ensuring to set the `eval` option to `false`, using "\#| eval: false", so that the help document isn't loaded every time you compile your Quarto document.
 
-#|this is my answer for question 1.c 
+
 Solution:
 #| eval: false
 help("esquisse")
@@ -101,7 +101,7 @@ help("esquisse")
 ## Part d
 Is a demo or vignette available for the  `esquisse` package for `R`? Report the code below, ensuring to set the `eval` option to `false`, using "\#| eval: false", so that the you don't get errors when you compile your Quarto document.
 
-#|this is my answer for question 1.d, 
+
 Solution:
 #| eval: false
 demo("esquisse")
@@ -113,7 +113,7 @@ Add the BibTeX citation for `esquisse` package for `R` to your `.bib` file and c
 <!-- Note the \hspace{-0em} above is for printing 
 the command instead of actually citing. -->
 
-#|this is my answer for question 1.e 
+
 Solution: the package @\hspace{-0em}esquisse explores and visualizes data interactively
 
 ## Part f
@@ -202,6 +202,13 @@ Consider setting up data entry for this experiment.
 
 i. Create a vector containing each `ID` repeated three times, once for each treatment.
 ii. Create a vector containing each `Treatment` repeated for each participant ID.
+
+Solution:
+(id <- seq(1:10)) # create ID object
+(id.vector <- rep(id, each = 3)) # create ID vector
+
+(treatments <- c("Control", "Treatment A", "Treatment B")) # manually create treatements object
+(treatments.vector <- rep(treatments, times = 10)) # create treatments vector
 
 ## Part d
 Create a vector containing the `character` "MATH" and the `numeric` 240. What is the resulting class? Explain why in a sentence.

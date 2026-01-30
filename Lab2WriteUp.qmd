@@ -180,6 +180,9 @@ where $F_0=0$ and $F_1=1$.
 
 Create a vector of the first 10 Fibonacci numbers.
 
+Solution: 
+(fibonacci <- c(0, 1, 1, 2, 3, 5, 8, 13, 21, 34)) #created fib vector for part 2.a
+
 ## Part b
 Triangular Numbers are the cumulative sums of natural numbers:
 $$F_n = \frac{n(n+1)}{2}.$$
